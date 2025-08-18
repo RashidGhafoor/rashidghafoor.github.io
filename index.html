@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Arrow D-U-H</title>
+    <link rel="preload" href="/public/assets/ui/arrow.svg" as="image" type="image/svg+xml">
+    <link rel="stylesheet" href="/src/styles.css">
+  </head>
+  <body>
+    <div id="app" class="app">
+      <header class="app__header">
+        <h1 class="brand">Arrow D‑U‑H</h1>
+        <nav class="nav">
+          <button id="navHome" class="btn btn--ghost">Home</button>
+          <button id="navSettings" class="btn btn--ghost">Settings</button>
+        </nav>
+      </header>
+
+      <main class="app__main">
+        <section id="screenHome" data-screen>
+          <div class="hero">
+            <h2 class="hero__title">Can you beat the arrow?</h2>
+            <p class="hero__subtitle">Guess the word before time runs out.</p>
+            <div class="hero__actions">
+              <button id="playBtn" class="btn btn--primary">Play</button>
+              <button id="howBtn" class="btn btn--outline">How to Play</button>
+            </div>
+            <div id="howPanel" class="how" hidden>
+              <p>Each round shows an image with a teal arrow pointing at something.</p>
+              <p>Type your guess — case and spaces don’t matter.</p>
+              <p>Timed mode gives you 5 seconds. Classic mode is chill.</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="screenGame" data-screen hidden>
+          <div class="hud">
+            <div class="hud__item">
+              <span>Round</span>
+              <strong id="roundLabel">1/10</strong>
+            </div>
+            <div class="hud__item">
+              <span>Score</span>
+              <strong id="scoreLabel">0</strong>
+            </div>
+            <div class="hud__item hud__timer" id="timerWrap">
+              <span>Time</span>
+              <strong id="timerLabel">5</strong>
+            </div>
+          </div>
+
+          <div class="stage" id="stage">
+            <div class="imgWrap" id="imageWrap">
+              <img id="cardImage" alt="Card" />
+              <svg id="arrowOverlay" class="arrowOverlay" viewBox="0 0 100 100" preserveAspectRatio="none"></svg>
+            </div>
+
+            <form id="answerForm" class="answer">
+              <input id="answerInput" class="input" type="text" placeholder="Type your guess" autocomplete="off" />
+              <button class="btn btn--primary" type="submit">Submit</button>
+            </form>
+          </div>
+
+          <div id="feedbackOverlay" class="feedbackOverlay" hidden></div>
+        </section>
+
+        <section id="screenSettings" data-screen hidden>
+          <h2>Settings</h2>
+          <div class="setting">
+            <label class="switch">
+              <input type="checkbox" id="modeToggle" />
+              <span>Classic Mode (untimed)</span>
+            </label>
+          </div>
+          <div class="setting">
+            <label for="timerSeconds">Timer (seconds)</label>
+            <input id="timerSeconds" type="number" min="3" max="20" step="1" />
+          </div>
+          
+          <button id="saveSettingsBtn" class="btn btn--primary">Save</button>
+        </section>
+
+        <section id="screenResults" data-screen hidden>
+          <h2>Results</h2>
+          <p>Your score: <strong id="finalScore">0</strong></p>
+          <button id="playAgainBtn" class="btn btn--primary">Play again</button>
+        </section>
+      </main>
+
+      <footer class="app__footer">
+        <small>© Arrow D‑U‑H</small>
+      </footer>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+  </html>
+
+

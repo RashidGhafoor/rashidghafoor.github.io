@@ -1,0 +1,42 @@
+{
+  "correct": [
+    {"text": "Nailed it!", "icon": "🎯"},
+    {"text": "Bullseye!", "icon": "🎯"},
+    {"text": "Spot on!", "icon": "🔍"},
+    {"text": "Boom!", "icon": "💥"},
+    {"text": "Right on the money!", "icon": "💵"},
+    {"text": "Bingo!", "icon": "🎉"},
+    {"text": "You got it!", "icon": "🙌"},
+    {"text": "Sharp shooter!", "icon": "🎯"},
+    {"text": "Winner!", "icon": "🏆"},
+    {"text": "Dead center!", "icon": "🎯"},
+    {"text": "Jackpot!", "icon": "💰"},
+    {"text": "On point!", "icon": "📌"},
+    {"text": "Gotcha!", "icon": "😎"},
+    {"text": "Perfect!", "icon": "🌟"},
+    {"text": "Yes, yes, yes!", "icon": "💪"}
+  ],
+  "wrong": [
+    {"text": "D-U-H", "icon": "🤦", "weight": 2},
+    {"text": "Missed it!", "icon": "😬"},
+    {"text": "Close, but nope!", "icon": "🙃"},
+    {"text": "Not quite…", "icon": "😕"},
+    {"text": "Oops!", "icon": "😳"},
+    {"text": "Better luck next time!", "icon": "🍀"},
+    {"text": "Swing and a miss!", "icon": "⚾"},
+    {"text": "Off target!", "icon": "🎯❌"},
+    {"text": "Try again!", "icon": "🔄"},
+    {"text": "So close!", "icon": "🤏"},
+    {"text": "Nope!", "icon": "🚫"},
+    {"text": "Wrong way!", "icon": "↩️"},
+    {"text": "Busted!", "icon": "💥"},
+    {"text": "Denied!", "icon": "🛑"},
+    {"text": "Foiled again!", "icon": "🦹"}
+  ],
+  "policies": {
+    "duhOnTimeout": true,
+    "duhBiasWrong": 1.5
+  }
+}
+
+

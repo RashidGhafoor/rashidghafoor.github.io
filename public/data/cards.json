@@ -1,0 +1,97 @@
+{
+  "version": 1,
+  "cards": [
+    {
+      "id": "bldg-big-01",
+      "image": "/public/assets/images/buildings-01.svg",
+      "answer": "big",
+      "alternates": ["large", "bigger"],
+      "arrow": { "xPercent": 62.5, "yPercent": 38.0, "rotationDeg": -20, "lengthPx": 140 },
+      "hint": "size adjective",
+      "difficulty": 1
+    },
+    {
+      "id": "fruit-red-02",
+      "image": "/public/assets/images/fruit-02.svg",
+      "answer": "apple",
+      "alternates": ["red apple"],
+      "arrow": { "xPercent": 44.0, "yPercent": 52.0, "rotationDeg": -65, "lengthPx": 120 },
+      "hint": "fruit",
+      "difficulty": 1
+    },
+    {
+      "id": "animal-ears-03",
+      "image": "/public/assets/images/animal-03.svg",
+      "answer": "ears",
+      "alternates": ["ear"],
+      "arrow": { "xPercent": 70.0, "yPercent": 24.0, "rotationDeg": -15, "lengthPx": 110 },
+      "hint": "body part",
+      "difficulty": 1
+    },
+    {
+      "id": "beach-sand-04",
+      "image": "/public/assets/images/beach-04.svg",
+      "answer": "sand",
+      "alternates": ["sand beach", "beach sand"],
+      "arrow": { "xPercent": 30.0, "yPercent": 72.0, "rotationDeg": 35, "lengthPx": 130 },
+      "hint": "beach",
+      "difficulty": 1
+    },
+    {
+      "id": "car-wheel-05",
+      "image": "/public/assets/images/car-05.svg",
+      "answer": "wheel",
+      "alternates": ["tire", "tyre"],
+      "arrow": { "xPercent": 58.0, "yPercent": 78.0, "rotationDeg": 10, "lengthPx": 120 },
+      "hint": "vehicle part",
+      "difficulty": 1
+    },
+    {
+      "id": "sky-cloud-06",
+      "image": "/public/assets/images/sky-06.svg",
+      "answer": "cloud",
+      "alternates": ["clouds"],
+      "arrow": { "xPercent": 62.0, "yPercent": 22.0, "rotationDeg": 25, "lengthPx": 100 },
+      "hint": "weather",
+      "difficulty": 1
+    },
+    {
+      "id": "city-bridge-07",
+      "image": "/public/assets/images/city-07.svg",
+      "answer": "bridge",
+      "alternates": ["overpass"],
+      "arrow": { "xPercent": 40.0, "yPercent": 48.0, "rotationDeg": -5, "lengthPx": 140 },
+      "hint": "structure",
+      "difficulty": 2
+    },
+    {
+      "id": "forest-tree-08",
+      "image": "/public/assets/images/forest-08.svg",
+      "answer": "tree",
+      "alternates": ["trees"],
+      "arrow": { "xPercent": 68.0, "yPercent": 55.0, "rotationDeg": -30, "lengthPx": 110 },
+      "hint": "nature",
+      "difficulty": 1
+    },
+    {
+      "id": "kitchen-mug-09",
+      "image": "/public/assets/images/kitchen-09.svg",
+      "answer": "mug",
+      "alternates": ["cup", "coffee mug"],
+      "arrow": { "xPercent": 51.0, "yPercent": 66.0, "rotationDeg": 60, "lengthPx": 95 },
+      "hint": "kitchen",
+      "difficulty": 1
+    },
+    {
+      "id": "sports-ball-10",
+      "image": "/public/assets/images/sports-10.svg",
+      "answer": "ball",
+      "alternates": ["soccer ball", "football"],
+      "arrow": { "xPercent": 36.0, "yPercent": 62.0, "rotationDeg": -50, "lengthPx": 115 },
+      "hint": "sports",
+      "difficulty": 1
+    }
+  ]
+}
+
+
