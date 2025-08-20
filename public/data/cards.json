@@ -3,7 +3,7 @@
   "cards": [
     {
       "id": "bldg-big-01",
-      "image": "/public/assets/images/buildings-01.svg",
+      "image": "/public/assets/images/buildings.jpg",
       "answer": "big",
       "alternates": ["large", "bigger"],
       "arrow": { "xPercent": 62.5, "yPercent": 38.0, "rotationDeg": -20, "lengthPx": 140 },
@@ -12,7 +12,7 @@
     },
     {
       "id": "fruit-red-02",
-      "image": "/public/assets/images/fruit-02.svg",
+      "image": "/public/assets/images/fruits.jpg",
       "answer": "apple",
       "alternates": ["red apple"],
       "arrow": { "xPercent": 44.0, "yPercent": 52.0, "rotationDeg": -65, "lengthPx": 120 },
@@ -21,7 +21,7 @@
     },
     {
       "id": "animal-ears-03",
-      "image": "/public/assets/images/animal-03.svg",
+      "image": "/public/assets/images/animals.jpg",
       "answer": "ears",
       "alternates": ["ear"],
       "arrow": { "xPercent": 70.0, "yPercent": 24.0, "rotationDeg": -15, "lengthPx": 110 },
@@ -30,7 +30,7 @@
     },
     {
       "id": "beach-sand-04",
-      "image": "/public/assets/images/beach-04.svg",
+      "image": "/public/assets/images/beach.jpg",
       "answer": "sand",
       "alternates": ["sand beach", "beach sand"],
       "arrow": { "xPercent": 30.0, "yPercent": 72.0, "rotationDeg": 35, "lengthPx": 130 },
@@ -39,7 +39,7 @@
     },
     {
       "id": "car-wheel-05",
-      "image": "/public/assets/images/car-05.svg",
+      "image": "/public/assets/images/cars.jpg",
       "answer": "wheel",
       "alternates": ["tire", "tyre"],
       "arrow": { "xPercent": 58.0, "yPercent": 78.0, "rotationDeg": 10, "lengthPx": 120 },
@@ -48,7 +48,7 @@
     },
     {
       "id": "sky-cloud-06",
-      "image": "/public/assets/images/sky-06.svg",
+      "image": "/public/assets/images/sky.jpg",
       "answer": "cloud",
       "alternates": ["clouds"],
       "arrow": { "xPercent": 62.0, "yPercent": 22.0, "rotationDeg": 25, "lengthPx": 100 },
@@ -57,7 +57,7 @@
     },
     {
       "id": "city-bridge-07",
-      "image": "/public/assets/images/city-07.svg",
+      "image": "/public/assets/images/buildings.jpg",
       "answer": "bridge",
       "alternates": ["overpass"],
       "arrow": { "xPercent": 40.0, "yPercent": 48.0, "rotationDeg": -5, "lengthPx": 140 },
@@ -66,7 +66,7 @@
     },
     {
       "id": "forest-tree-08",
-      "image": "/public/assets/images/forest-08.svg",
+      "image": "/public/assets/images/forest.jpg",
       "answer": "tree",
       "alternates": ["trees"],
       "arrow": { "xPercent": 68.0, "yPercent": 55.0, "rotationDeg": -30, "lengthPx": 110 },
@@ -75,7 +75,7 @@
     },
     {
       "id": "kitchen-mug-09",
-      "image": "/public/assets/images/kitchen-09.svg",
+      "image": "/public/assets/images/kitchen.jpg",
       "answer": "mug",
       "alternates": ["cup", "coffee mug"],
       "arrow": { "xPercent": 51.0, "yPercent": 66.0, "rotationDeg": 60, "lengthPx": 95 },
@@ -84,7 +84,7 @@
     },
     {
       "id": "sports-ball-10",
-      "image": "/public/assets/images/sports-10.svg",
+      "image": "/public/assets/images/sports.jpg",
       "answer": "ball",
       "alternates": ["soccer ball", "football"],
       "arrow": { "xPercent": 36.0, "yPercent": 62.0, "rotationDeg": -50, "lengthPx": 115 },

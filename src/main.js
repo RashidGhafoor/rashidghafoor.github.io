@@ -19,12 +19,7 @@ async function bootstrap() {
       showGameScreen();
       startGame(cards, feedback);
     });
-    const howBtn = document.getElementById('howBtn');
-    const howPanel = document.getElementById('howPanel');
-    howBtn.addEventListener('click', () => {
-      const hidden = howPanel.hasAttribute('hidden');
-      if (hidden) howPanel.removeAttribute('hidden'); else howPanel.setAttribute('hidden', '');
-    });
+    // details/summary handles its own toggle for How to Play; no JS needed
 
     // Settings
     initializeSettingsUI();

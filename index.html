@@ -24,12 +24,14 @@
             <p class="hero__subtitle">Guess the word before time runs out.</p>
             <div class="hero__actions">
               <button id="playBtn" class="btn btn--primary">Play</button>
-              <button id="howBtn" class="btn btn--outline">How to Play</button>
-            </div>
-            <div id="howPanel" class="how" hidden>
-              <p>Each round shows an image with a teal arrow pointing at something.</p>
-              <p>Type your guess — case and spaces don’t matter.</p>
-              <p>Timed mode gives you 5 seconds. Classic mode is chill.</p>
+              <details id="howDetails" class="howDetails">
+                <summary class="btn btn--outline">How to Play</summary>
+                <div class="howCard">
+                  <p>Each round shows an image with a teal arrow pointing at something.</p>
+                  <p>Type your guess — case and spaces don’t matter.</p>
+                  <p>Timed mode gives you 5 seconds. Classic mode is chill.</p>
+                </div>
+              </details>
             </div>
           </div>
         </section>

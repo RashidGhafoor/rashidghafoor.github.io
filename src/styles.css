@@ -49,11 +49,18 @@ body {
 .hero { text-align:center; margin-top: -12px; position: relative; }
 .hero__title { margin:0 0 8px; font-size: clamp(24px, 6vw, 44px); }
 .hero__subtitle { margin:0 0 20px; color: var(--muted); }
-.hero__actions { display:flex; gap:12px; justify-content:center; }
+.hero__actions { display:flex; flex-direction: column; gap:12px; justify-content:center; align-items:center; position: relative; }
+.hero__actions .btn--primary { padding: 10px 30px; font-size: clamp(20px, 3.5vw, 28px); border-radius: 16px; min-width: 200px; }
+.hero__actions .btn--outline { padding: 6px 10px; font-size: clamp(13px, 1.8vw, 15px); border-radius: 12px; }
 
-/* How panel floats and does not shift layout */
-.how { position:absolute; left:50%; transform: translateX(-50%); margin-top: 8px; text-align:center; color: var(--muted); width: min(92vw, 720px); }
-.how p { margin: 6px 0; }
+/* How-to dropdown card */
+.howDetails { width: auto; position: relative; align-self: center; }
+.howDetails > summary { list-style: none; }
+.howDetails > summary::-webkit-details-marker { display: none; }
+.howDetails[open] > summary { border-color: rgba(32,208,194,0.6); }
+.howDetails > summary { display: inline-flex; white-space: nowrap; }
+.howCard { position:absolute; top: calc(100% + 8px); left: 50%; transform: translateX(-50%); width: min(92vw, 720px); padding: 12px 14px; border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; background: rgba(255,255,255,0.03); color: var(--muted); box-shadow: 0 10px 30px rgba(0,0,0,.35); z-index: 5; }
+.howCard p { margin: 6px 0; }
 
 .btn { cursor:pointer; border:none; border-radius: 12px; padding: 10px 16px; font-weight: 700; transition: transform .08s ease, box-shadow .12s ease, background-color .12s ease; }
 .btn--primary { background: var(--accent); color: #081110; }
@@ -66,6 +73,10 @@ body {
 .hud__item span { display:block; color: var(--muted); font-size:12px; }
 .hud__item strong { font-size: 16px; letter-spacing:.5px; }
 .hud__timer { outline: 2px solid rgba(32,208,194,0.25); }
+
+/* Keep HUD centered when timer is hidden */
+.hud:has(#timerWrap[style*="hidden"]) { justify-content: center; }
+.hud #timerWrap[style*="hidden"] { display: none; }
 
 .stage { display:flex; flex-direction:column; align-items:center; gap: 12px; }
 .stage { width: min(92vw, 720px); }

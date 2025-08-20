@@ -81,6 +81,7 @@ function renderArrow(card) {
   line.setAttribute('stroke', '#20D0C2');
   line.setAttribute('stroke-width', '1.6');
   line.setAttribute('stroke-linecap', 'round');
+  line.setAttribute('filter', 'url(#arrowGlow)');
 
   const head = document.createElementNS('http://www.w3.org/2000/svg', 'polygon');
   const headLen = len * 0.28; // slightly smaller head
@@ -91,8 +92,26 @@ function renderArrow(card) {
   head.setAttribute('points', `${hx},${hy} ${left.x},${left.y} ${right.x},${right.y}`);
   head.setAttribute('fill', '#20D0C2');
 
+  ensureGlow(svg);
   svg.appendChild(line);
   svg.appendChild(head);
+}
+
+function ensureGlow(svg) {
+  const existing = svg.querySelector('#arrowGlow');
+  if (existing) return;
+  const defs = document.createElementNS('http://www.w3.org/2000/svg', 'defs');
+  const filter = document.createElementNS('http://www.w3.org/2000/svg', 'filter');
+  filter.setAttribute('id', 'arrowGlow');
+  const fe = document.createElementNS('http://www.w3.org/2000/svg', 'feDropShadow');
+  fe.setAttribute('dx', '0');
+  fe.setAttribute('dy', '0');
+  fe.setAttribute('stdDeviation', '1.2');
+  fe.setAttribute('flood-color', '#20D0C2');
+  fe.setAttribute('flood-opacity', '0.6');
+  filter.appendChild(fe);
+  defs.appendChild(filter);
+  svg.appendChild(defs);
 }
 
 function rotatePoint(px, py, cx, cy, theta) {
