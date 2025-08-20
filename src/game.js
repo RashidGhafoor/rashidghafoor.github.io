@@ -47,6 +47,7 @@ export function startRound() {
   lockInput(false);
 
   if (!state.settings.classicMode) startTimer(); else updateTimerLabel(state.settings.timerSeconds);
+  bindCalibration();
 }
 
 function drawCard(card) {
@@ -112,6 +113,27 @@ function ensureGlow(svg) {
   filter.appendChild(fe);
   defs.appendChild(filter);
   svg.appendChild(defs);
+}
+
+function bindCalibration() {
+  try {
+    const enabled = localStorage.getItem('arrow-duh-calibrate') === '1';
+    const svg = document.getElementById('arrowOverlay');
+    if (!enabled || !svg) return;
+    svg.style.pointerEvents = 'auto';
+    svg.onclick = (e) => {
+      const rect = svg.getBoundingClientRect();
+      const xPercent = ((e.clientX - rect.left) / rect.width) * 100;
+      const yPercent = ((e.clientY - rect.top) / rect.height) * 100;
+      const card = state.deck[state.roundIndex];
+      console.log('CALIBRATE x%, y% for', card.id, xPercent.toFixed(1), yPercent.toFixed(1));
+      // Press Shift-click to rotate +10deg; Alt-click to increase length by 10px
+      if (e.shiftKey) card.arrow.rotationDeg = (card.arrow.rotationDeg || 0) + 10;
+      if (e.altKey) card.arrow.lengthPx = (card.arrow.lengthPx || 100) + 10;
+      card.arrow.xPercent = xPercent; card.arrow.yPercent = yPercent;
+      renderArrow(card);
+    };
+  } catch {}
 }
 
 function rotatePoint(px, py, cx, cy, theta) {
